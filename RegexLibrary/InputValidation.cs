@@ -35,6 +35,11 @@ namespace RegexLibrary
 {
     public static class InputValidation
     {
+        public static void Run()
+        {
+
+        }
+
         public static bool Digits(string id)
         {
             string regexStr = @"^[0-9]{5}$";

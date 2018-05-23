@@ -45,10 +45,8 @@ namespace RegexLibrary
             signature += " *************************************************************** \n";
             Console.WriteLine(signature);
 
-
-
-
-
+            InputValidation.Run();
+            Common.Run();
 
         } // end method Main()
     } // end class Program

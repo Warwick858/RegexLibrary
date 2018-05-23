@@ -88,13 +88,5 @@ namespace RegexLibraryTest
             Assert.IsFalse(CourseDesc("Web_Programming #2"));
             Assert.IsFalse(CourseDesc("test space"));
         }
-
-        //[TestMethod]
-        //public void DigitsTest()
-        //{
-        //    Assert.IsTrue(Digits("12345"));
-        //    Assert.IsFalse(Digits("1d3f4"));
-        //    Assert.IsFalse(Digits("123"));
-        //}
     } // end class InputValidationTest
 } // end namespace RegexLibraryTest
