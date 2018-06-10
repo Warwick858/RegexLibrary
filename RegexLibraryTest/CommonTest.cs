@@ -111,7 +111,17 @@ namespace RegexLibraryTest
             Assert.IsTrue(CComments("//Main method public void Main() {} // end of main"));
         } // end method CCommentsTest()
 
-
+        [TestMethod]
+        public void CreditCardsTest()
+        {
+            //Assert.IsTrue(CreditCards("5212345678901234")); // MasterCard
+            //Assert.IsTrue(CreditCards("4123456789012")); // Visa 1
+            //Assert.IsTrue(CreditCards("4123456789012345")); // Visa 2
+            //Assert.IsTrue(CreditCards("371234567890123")); // Amex
+            //Assert.IsTrue(CreditCards("601112345678901234")); // Discover
+            //Assert.IsTrue(CreditCards("38812345678901")); // Diner's Club
+            Assert.IsFalse(CreditCards("0112568"));
+        } // end method CreditCardsTest()
 
     } // end class CommonTest
 } // end namespace RegexLibraryTest

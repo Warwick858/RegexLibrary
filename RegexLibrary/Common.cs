@@ -160,5 +160,21 @@ namespace RegexLibrary
             return false;
         } // end method CComments()
 
+        /// <summary>
+        /// Matches: MC, Visa 1, Visa 2, Amex, Discover, Diner's Club
+        /// </summary>
+        public static bool CreditCards(string str)
+        {
+            string pattern = @"(5[1-5]\d{14})|(4\d{12}(\d{3})?)|(3[47]\d{13})|(6011\d{14})|((30[0-5]|36\d|38\d)\d{11})";
+            Regex regex = new Regex(pattern);
+
+            if (!regex.IsMatch(str))
+            {
+                return true;
+            }
+
+            return false;
+        } // end method CreditCards()
+
     } // end class Common
 } // end namespace RegexLibrary
