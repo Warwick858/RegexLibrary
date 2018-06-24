@@ -126,7 +126,7 @@ namespace RegexLibrary
 
         public static bool CourseDesc(string courseDesc)
         {
-            string regexStr = @"^[a-zA-Z_.#+,/)( ]*$";
+            string regexStr = @"^[a-zA-Z_.#+,/)(]*$";
             Regex regex = new Regex(regexStr);
 
             //If the string is alpha or a select set of special characters

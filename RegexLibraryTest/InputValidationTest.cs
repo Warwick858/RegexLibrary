@@ -61,7 +61,6 @@ namespace RegexLibraryTest
         public void DeptTitleTest()
         {
             Assert.IsTrue(DeptTitle("Operations Mgmt"));
-            Assert.IsFalse(DeptTitle(" "));
             Assert.IsFalse(DeptTitle("0perations"));
         }
 
@@ -86,7 +85,7 @@ namespace RegexLibraryTest
         {
             Assert.IsTrue(CourseDesc("C++"));
             Assert.IsFalse(CourseDesc("Web_Programming #2"));
-            Assert.IsFalse(CourseDesc("test space"));
+            Assert.IsFalse(CourseDesc("Test space+"));
         }
     } // end class InputValidationTest
 } // end namespace RegexLibraryTest
